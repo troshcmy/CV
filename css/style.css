@@ -386,6 +386,13 @@ header.scrolled .logo{
   filter: brightness(90%);
 }
 
+.hamburger{
+  background-color: red;
+  padding: 1rem 0;
+  height: 12px;
+  width: 25px;
+}
+
 
 /* --------------- Showcase Area Styling --------------- */
 
@@ -1331,6 +1338,25 @@ footer.container{
 /* --------------- 500px Screens --------------- */
 
 @media (max-width: 500px) {
+
+.container {
+  padding: 0 1rem;
+}
+
+.showcase-area .square{
+  display: none;
+}
+
+.showcase-area .container{
+  row-gap: 4.5rem;
+}
+
+.showcase-image {
+
+}
+
+
+
 
 
 }
