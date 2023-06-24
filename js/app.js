@@ -17,6 +17,8 @@ const header = document.querySelector("header");
 
 const toggle_btn = document.querySelector(".toggle-btn");
 
+const hamburger = document.querySelector(".hamburger");
+
 
 
 
@@ -285,5 +287,16 @@ toggle_btn.addEventListener("click", () => {
 });
 
 
-
 /* --------------- Open & Close Navbar Menu --------------- */
+
+hamburger.addEventListener("click", () => {
+  document.body.classList.toggle("open");
+  document.body.classList.toggle("stopScrolling");
+});
+
+links.forEach((link) =>
+  link.addEventListener("click",() =>{
+  document.body.classList.remove("open");
+  document.body.classList.remove("stopScrolling");
+})
+);
